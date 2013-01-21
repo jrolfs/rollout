@@ -2,7 +2,7 @@
 /*global browser:true, console:true, $:true, _:true, module:true*/
 
 // rollout.js
-// version : 0.0.3
+// version : 0.0.4
 // author : Jamie Rolfs
 // license : MIT
 // github.com/jrolfs/rolloutjs
@@ -168,8 +168,8 @@
 
         if (this.mouseX > offset.left - threshold &&
             this.mouseY > offset.top - threshold &&
-            this.mouseX < offset.left + $el.outerHeight() + threshold &&
-            this.mouseY < offset.top + $el.outerWidth() + threshold) {
+            this.mouseX < offset.left + $el.outerWidth() + threshold &&
+            this.mouseY < offset.top + $el.outerHeight() + threshold) {
             return true;
         }
 
